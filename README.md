@@ -40,3 +40,7 @@ Sample console app output (updates whenever a new message updates the location o
 To start the server to consume from, please install python, and run **python3 server.py 8081**
 
 Feel free to modify the code in *tram_dashboard.c*, which already implements a TCP socket consumer and dumps the content to a string & byte array
+
+Build Code: gcc .\tram_dashboard.c .\resolve_collison.c .\trams_database.c -o tram.exe
+
+Run code: ./tram.exe --tram-db=./tram_ids.txt --portno=8081 --dump-file=./dump_file_path
